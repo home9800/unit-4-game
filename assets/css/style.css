@@ -67,3 +67,20 @@ body {
     margin: 15px; 
 }
 
+
+/*This is where the total score will go. */
+
+.total {
+background-color: teal;
+width: 400px;
+height: 50px;
+font-size: 30px;
+}
+
+.outside {
+    margin-top: 30px;
+}
+
+.score {
+    font-size: 30px;
+}

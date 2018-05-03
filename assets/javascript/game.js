@@ -1,18 +1,19 @@
 var randomResult; 
 var lost;
-var win;
 
 
+let playerScore = 0;
+let playerWins= 0;
 
 
-randomResult = Math.floor(Math.random() * 99); //It will not link with the html
+randomResult = Math.floor(Math.random() * 99);
 
 var total = 0;
 $('#random').html(randomResult);
 for(var i = 0; i < 4; i++) {
 
     var random = Math.floor(Math.random() * 12);
-    // console.log(random);
+
     $('#image' + (i + 1)).attr({ 
         "data-random" : random
     });
@@ -27,12 +28,19 @@ $('#image' + (i + 1)).on('click', function () {
 var numStr = $(this).attr('data-random');
 var num = parseInt(numStr);
 total = total + num;
-$('.total').text("This is the Total: " + total);
-
+$('.total').text("Your Total Score Is: " + total);
 
 
 if (total > randomResult) {
     console.log("LOSE");
+    playerScore += 1;
+    $('#losses').text("Losses:" + playerScore)
+}
+
+if (total == randomResult) {
+    console.log("WIN");
+    playerWins += 1;
+    $('#wins').text("Wins:" + playerWins)
 }
 
 console.log(total);
