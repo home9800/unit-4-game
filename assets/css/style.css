@@ -1,0 +1,69 @@
+body {
+    background: url("../images/concrete-texture.png");
+}
+
+/* This is the heading and the box */
+
+.heading {
+    background-color: orange;
+    width: 250px;
+    height: 100px;
+}
+
+.heading h1 {
+    padding-top: 30px;
+}
+
+/* This is the text in the paragraph. */ 
+
+.paragraph {
+    height: 250px;
+    width: 500px;
+    background-color: #FAE3C6;
+    margin-top: 20px;
+}
+
+.paragraph div {
+    padding: 10px;
+}
+
+/* This makes the box with random number */
+
+/*.inline {
+    display: inline-block;
+}
+*/
+
+.inline {
+    display: inline-block;
+}
+
+#random {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    font-size: 90px;
+    float: left;
+}
+
+#result {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+
+.auto {
+    padding-top: 20px;
+    overflow: auto
+}
+
+/* This makes the images */
+
+.images img {
+    width: 150px;
+    height: 150px;
+    margin: 15px; 
+}
+
